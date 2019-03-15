@@ -39,7 +39,8 @@ class App extends React.Component {
 		do {
 			$.ajax({ 
 				type: "GET",
-				url: corsProxy + encodeURIComponent(muckRack + '?page=' + i) + '&callback=?',
+				//url: corsProxy + encodeURIComponent(muckRack + '?page=' + i) + '&callback=?',  //local 
+				url: corsProxy + muckRack + '?page=' + i, 		// prod
 				dataType: 'jsonp',
 				success: (data) => { 
 					$(data.contents).find('.news-story').each((i, article) => {
