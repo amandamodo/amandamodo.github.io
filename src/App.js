@@ -2,7 +2,10 @@ import React from 'react';
 import $ from 'jquery';
 import moment from 'moment';
 
-const corsProxy = 'https://crossproxy.me/';
+//prod proxy
+const corsProxy = 'https://crossorigin.me/';
+//local proxy
+//const corsProxy = 'http://www.whateverorigin.org/get?url=';
 const muckRack = 'https://muckrack.com/amanda-odonnell/articles';
 const articles = {};
 const sources = {};
