@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import moment from 'moment';
 
-const cors = 'https://crossorigin.me/';
+const corsProxy = 'https://crossproxy.me/';
 const muckRack = 'https://muckrack.com/amanda-odonnell/articles';
 const articles = {};
 const sources = {};
@@ -36,7 +36,7 @@ class App extends React.Component {
 		do {
 			$.ajax({ 
 				type: "GET",
-				url: 'http://www.whateverorigin.org/get?url=' + encodeURIComponent(muckRack + '?page=' + i) + '&callback=?',
+				url: corsProxy + encodeURIComponent(muckRack + '?page=' + i) + '&callback=?',
 				dataType: 'jsonp',
 				success: (data) => { 
 					$(data.contents).find('.news-story').each((i, article) => {
