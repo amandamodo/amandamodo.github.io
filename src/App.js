@@ -36,13 +36,14 @@ class App extends React.Component {
 		})
 	}
 	handleScroll(e) {
-		const d = document.documentElement;
-		const offset = d.scrollTop + window.innerHeight;
-		const height = d.offsetHeight;
+		const {
+			end,
+			headlinesList
+		} = this.state;
 
-		if (offset > height - 300 && this.state.end < this.state.headlinesList.length) {
+		if ((window.innerHeight + window.scrollY) > document.body.scrollHeight - 300 && end < headlinesList.length) {
 			this.setState({
-				end: this.state.end += 30
+				end: end + 30
 			})
 		}
 	}
