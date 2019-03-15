@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import moment from 'moment';
 
-const cors = 'http://www.whateverorigin.org/get?url=';
+const cors = 'https://crossorigin.me/';
 const muckRack = 'https://muckrack.com/amanda-odonnell/articles';
 const articles = {};
 const sources = {};
