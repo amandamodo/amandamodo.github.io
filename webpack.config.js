@@ -3,6 +3,7 @@ const Path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 function getDevTool() {
     return 'source-map';
@@ -13,7 +14,7 @@ const webpackConfig = {
         index: './src/index.js'
     },
     output: {
-        filename: './dist/scripts/[name].min.js'
+        filename: './dist/scripts/[name].[hash:7].min.js'
     },
     devtool: getDevTool(),
     module: {
@@ -44,6 +45,7 @@ const webpackConfig = {
         ]
     },
     plugins: [  
+        new CleanWebpackPlugin(['./dist/scripts']),
         new Webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: './src/index.html'
@@ -53,7 +55,7 @@ const webpackConfig = {
             'NODE_ENV': "'development'"
             }
         }),
-        new ExtractTextPlugin('./dist/styles/main.css', {
+        new ExtractTextPlugin('./dist/styles/main.[hash:7].css', {
             allChunks: true
         }),
     ]

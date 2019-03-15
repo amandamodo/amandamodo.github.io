@@ -20,7 +20,12 @@ class App extends React.Component {
 	componentDidMount() {
 		this.getSortedHeadlines();
 
+		window.addEventListener('scroll', this.handleScroll);
+
 		//getArticles();
+	}
+	componentWillUnmount(){
+		window.removeEventListener('scroll');
 	}
 	getSortedHeadlines() {
 		return Object.keys(articles).sort((a,b) => {
@@ -31,7 +36,11 @@ class App extends React.Component {
 		})
 	}
 	handleScroll(e) {
-		if (e.target.scrollTop > e.target.scrollHeight - e.target.offsetHeight - 300 && this.state.end < this.state.headlinesList.length) {
+		const d = document.documentElement;
+		const offset = d.scrollTop + window.innerHeight;
+		const height = d.offsetHeight;
+
+		if (offset > height - 300 && this.state.end < this.state.headlinesList.length) {
 			this.setState({
 				end: this.state.end += 30
 			})
@@ -45,7 +54,7 @@ class App extends React.Component {
 		let article;
 
 		return (
-			<div className='app' onScroll={this.handleScroll} >
+			<div className='app'>
 				<div className='content'>
 					<h1>
 						{"Amanda O'Donnell"}
