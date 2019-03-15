@@ -29,6 +29,10 @@ const webpackConfig = {
                 loaders: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
+                test: /\.json$/,
+                loader: 'json-loader'
+            },
+            {
                 test: /\.csv$/,
                 loader: 'csv-loader',
                 options: {
