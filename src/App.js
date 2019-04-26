@@ -56,7 +56,7 @@ class App extends React.Component {
 
 		return (
 			<div className='app'>
-				<div className='content'>
+				<header>
 					<h1>
 						{"Amanda O'Donnell"}
 					</h1>
@@ -66,6 +66,8 @@ class App extends React.Component {
 					<a href='https://twitter.com/amandamodo' target='_blank'>
 						@amandamodo
 					</a>
+				</header>
+				<div className='content'>
 					<ul>
 						{headlinesList.slice(0, end).map((key,i) => {
 							article = articles[key];
