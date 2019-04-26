@@ -60,6 +60,9 @@ class App extends React.Component {
 					<h1>
 						{"Amanda O'Donnell"}
 					</h1>
+					<h2>
+						{headlinesList.length} articles
+					</h2>
 					<a href='https://twitter.com/amandamodo' target='_blank'>
 						@amandamodo
 					</a>

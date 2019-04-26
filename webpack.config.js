@@ -10,11 +10,12 @@ function getDevTool() {
 }
 
 const webpackConfig = {
-    entry: {
-        index: './src/index.js'
-    },
+    entry: [
+        './src/index.js', 
+        './src/main.scss'
+    ],
     output: {
-        filename: './dist/scripts/[name].[hash:7].min.js'
+        filename: './dist/build/index.[hash:7].js'
     },
     devtool: getDevTool(),
     module: {
@@ -27,7 +28,7 @@ const webpackConfig = {
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loaders: ['style-loader', 'css-loader', 'sass-loader']
+                loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
             },
             {
                 test: /\.json$/,
@@ -45,18 +46,20 @@ const webpackConfig = {
         ]
     },
     plugins: [  
-        new CleanWebpackPlugin(['./dist/scripts']),
         new Webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin(['./dist/build/']),
         new HtmlWebpackPlugin({
-            template: './src/index.html'
-        }),  
+            template: './src/index.html',
+            filename: './index.html'
+        }), 
         new Webpack.DefinePlugin({
           'process.env': {
-            'NODE_ENV': "'development'"
-            }
+            NODE_ENV: "'development'",
+          },
         }),
-        new ExtractTextPlugin('./dist/styles/main.[hash:7].css', {
-            allChunks: true
+         new ExtractTextPlugin({
+            filename: 'dist/build/[name].[hash:7].css',
+            allChunks: true,
         }),
     ]
 };
@@ -65,7 +68,7 @@ webpackConfig.devServer = {
     contentBase: Path.join(__dirname, './src/'),
     publicPath: 'http://localhost:7000/',
     hot: true,
-    port: 7000,
+    port: 7676,
     inline: true,
     progress: true,
     historyApiFallback: true,

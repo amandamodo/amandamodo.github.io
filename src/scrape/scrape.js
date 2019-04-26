@@ -1,13 +1,15 @@
 import $ from 'jquery';
 import moment from 'moment';
 
+import prevArticles from './../data/articles';
+
 const corsProxy = 'http://www.whateverorigin.org/get?url=';
 const muckRack = 'https://muckrack.com/amanda-odonnell/articles';
 const articles = {};
 const sources = {};
 const duplicates = {};
 
-const numRequests = 40;
+const numRequests = 200;
 let finishedRequests = 0;
 
 export function getArticles() {
@@ -26,11 +28,14 @@ export function getArticles() {
 			dataType: 'jsonp',
 			success: (data) => { 
 				$(data.contents).find('.news-story').each((i, article) => {
-					//console.log(article)
 					article = $(article);
-					title = article.find('.news-story-title')[0];
-					source = article.find('.news-story-body a')[0];
+					title = article.find('.news-story-title a')[0];
+					source = article.find('.news-story-body > a')[0];
 					timestamp = article.find('.timeago').attr('title');
+
+					if (title) {
+						title = title.innerText;
+					}
 
 					if (title && source) {
 						if (!articles[title]) {
@@ -92,11 +97,23 @@ export function getArticles() {
 }
 
 function requestComplete() {
+	let i;
 	finishedRequests += 1;
 
 	if (finishedRequests === numRequests) {
-		console.log(JSON.stringify(articles))
 		console.log(JSON.stringify(sources))
+
+		// if new article, add to object
+		for (i in articles) {
+			if (!prevArticles[i]) {
+				prevArticles[i] = articles[i];
+				console.log(i, JSON.stringify(articles[i]))
+			}
+		}
+
+		console.log(JSON.stringify(prevArticles))
+
+		console.log(Object.keys(prevArticles).length, 'articles')
 	}
 }
 
