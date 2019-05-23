@@ -14402,7 +14402,7 @@
       }
     ],
     "earliestDate": "2017-01-17T00:00:00",
-    "text": "\n                \n                You know how you tell people who aren't from Texas that it isn't all the things they've imagined? Well the Mesquite Police Department is here to prove you wrong. https://www.facebook.com/Fox4DFW/posts/10154114573302093 Of Mesquite's 220 police officers, 180 have chosen to wear a new, optional part of the uniform: a black straw cowboy hat.\n                \n            \n        ",
+    "text": "\n                \n                You know how you tell people who aren't from Texas that it isn't all the things they've imagined? Well the Mesquite Police Department is here to prove you wrong. Of Mesquite's 220 police officers, 180 have chosen to wear a new, optional part of the uniform: a black straw cowboy hat.\n                \n            \n        ",
     "title": "Mesquite Police Department adds cowboy hats to uniform",
     "source": {
       "host": "austin.blog.statesman.com",
@@ -14420,7 +14420,7 @@
       }
     ],
     "earliestDate": "2017-01-12T00:00:00",
-    "text": "\n                \n                The Leander Police Department really wants you to stop at stop signs, and it's going to use whatever sarcastic means necessary to get the message across. https://www.facebook.com/leandertxpd/photos/a.212786875463324.49886.200646466677365/1295353347206666/?type=3&theater The department recently posted an informative PSA of sorts to its Facebook page \"introducing\" followers to a \"red and white sign that says 'STOP.'\" A picture of a stop sign included on the post helpfully defines the word \"stop\" as to \"cease all movement.\"\n                \n            \n        ",
+    "text": "\n                \n                The Leander Police Department really wants you to stop at stop signs, and it's going to use whatever sarcastic means necessary to get the message across. The department recently posted an informative PSA of sorts to its Facebook page \"introducing\" followers to a \"red and white sign that says 'STOP.'\" A picture of a stop sign included on the post helpfully defines the word \"stop\" as to \"cease all movement.\"\n                \n            \n        ",
     "title": "The Leander Police Department isn’t sure you know what a stop sign is",
     "source": {
       "host": "austin.blog.statesman.com",
@@ -16555,5 +16555,388 @@
       "host": "www.austin360.com",
       "href": "https://www.austin360.com/news/20190319/alamo-drafthouse-to-launch-ticket-subscription-service-in-all-theaters-by-end-of-year"
     }
-  }
+  },
+  "Whataburger hires Morgan Stanley to explore possible sale": {"articles":[
+    {"source":{"host":"www.statesman.com","href":"https://www.statesman.com/news/20190517/whataburger-hires-morgan-stanley-to-explore-possible-sale"},"timestamp":"2019-05-17T00:00:00"},{"source":{"host":"www.austin360.com","href":"https://www.austin360.com/news/20190517/whataburger-hires-morgan-stanley-to-explore-possible-sale"},"timestamp":"2019-05-17T00:00:00"},
+    {
+      "source": {
+        "host": "www.onlineathens.com",
+        "href": "https://www.onlineathens.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T00:00:00"
+    },
+    {
+      "source": {
+        "host": "www.goerie.com",
+        "href": "https://www.goerie.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T00:00:00"
+    },
+    {
+      "source": {
+        "host": "www.heraldtribune.com",
+        "href": "https://www.heraldtribune.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T00:00:00"
+    },
+    {
+      "source": {
+        "host": "www.granitefallsnews.com",
+        "href": "https://www.granitefallsnews.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:38:21"
+    },
+    {
+      "source": {
+        "host": "www.capecodtimes.com",
+        "href": "https://www.capecodtimes.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:37:13"
+    },
+    {
+      "source": {
+        "host": "www.butlercountytimesgazette.com",
+        "href": "https://www.butlercountytimesgazette.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:34:46"
+    },
+    {
+      "source": {
+        "host": "www.lajuntatribunedemocrat.com",
+        "href": "https://www.lajuntatribunedemocrat.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:34:45"
+    },
+    {
+      "source": {
+        "host": "www.chronicle-express.com",
+        "href": "https://www.chronicle-express.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:34:42"
+    },
+    {
+      "source": {
+        "host": "www.redwoodfallsgazette.com",
+        "href": "https://www.redwoodfallsgazette.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:33:34"
+    },
+    {
+      "source": {
+        "host": "www.thegurdontimes.com",
+        "href": "https://www.thegurdontimes.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:33:11"
+    },
+    {
+      "source": {
+        "host": "www.thekansan.com",
+        "href": "https://www.thekansan.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:32:30"
+    },
+    {
+      "source": {
+        "host": "www.newschief.com",
+        "href": "https://www.newschief.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:31:43"
+    },
+    {
+      "source": {
+        "host": "www.uticaod.com",
+        "href": "https://www.uticaod.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:30:54"
+    },
+    {
+      "source": {
+        "host": "www.miamiok.com",
+        "href": "https://www.miamiok.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:30:49"
+    },
+    {
+      "source": {
+        "host": "www.the-leader.com",
+        "href": "https://www.the-leader.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:29:12"
+    },
+    {
+      "source": {
+        "host": "www.whitehalljournal.com",
+        "href": "https://www.whitehalljournal.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:28:54"
+    },
+    {
+      "source": {
+        "host": "www.mcdonoughvoice.com",
+        "href": "https://www.mcdonoughvoice.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:28:02"
+    },
+    {
+      "source": {
+        "host": "www.agjournalonline.com",
+        "href": "https://www.agjournalonline.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:27:43"
+    },
+    {
+      "source": {
+        "host": "www.rrstar.com",
+        "href": "https://www.rrstar.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:27:34"
+    },
+    {
+      "source": {
+        "host": "www.recordonline.com",
+        "href": "https://www.recordonline.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:26:36"
+    },
+    {
+      "source": {
+        "host": "www.leavenworthtimes.com",
+        "href": "https://www.leavenworthtimes.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:25:43"
+    },
+    {
+      "source": {
+        "host": "www.poconorecord.com",
+        "href": "https://www.poconorecord.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:23:55"
+    },
+    {
+      "source": {
+        "host": "www.grandlakenews.com",
+        "href": "https://www.grandlakenews.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:23:30"
+    },
+    {
+      "source": {
+        "host": "www.gastongazette.com",
+        "href": "https://www.gastongazette.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:23:03"
+    },
+    {
+      "source": {
+        "host": "www.yourstephenvilletx.com",
+        "href": "https://www.yourstephenvilletx.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:21:52"
+    },
+    {
+      "source": {
+        "host": "www.southcoasttoday.com",
+        "href": "https://www.southcoasttoday.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:19:48"
+    },
+    {
+      "source": {
+        "host": "www.fowlertribune.com",
+        "href": "https://www.fowlertribune.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:18:53"
+    },
+    {
+      "source": {
+        "host": "www.timestelegram.com",
+        "href": "https://www.timestelegram.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:17:59"
+    },
+    {
+      "source": {
+        "host": "www.wellsvilledaily.com",
+        "href": "https://www.wellsvilledaily.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T14:06:50"
+    },
+    {
+      "source": {
+        "host": "www.sekvoice.com",
+        "href": "https://www.sekvoice.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:54:57"
+    },
+    {
+      "source": {
+        "host": "www.kiowacountysignal.com",
+        "href": "https://www.kiowacountysignal.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:23:48"
+    },
+    {
+      "source": {
+        "host": "www.steubencourier.com",
+        "href": "https://www.steubencourier.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:22:42"
+    },
+    {
+      "source": {
+        "host": "www.newsherald.com",
+        "href": "https://www.newsherald.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:22:41"
+    },
+    {
+      "source": {
+        "host": "www.newbernsj.com",
+        "href": "https://www.newbernsj.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:18:57"
+    },
+    {
+      "source": {
+        "host": "www.telegram.com",
+        "href": "https://www.telegram.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:18:32"
+    },
+    {
+      "source": {
+        "host": "www.stjamesnews.com",
+        "href": "https://www.stjamesnews.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:17:46"
+    },
+    {
+      "source": {
+        "host": "www.brownwoodtx.com",
+        "href": "https://www.brownwoodtx.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:01:22"
+    },
+    {
+      "source": {
+        "host": "www.postsouth.com",
+        "href": "https://www.postsouth.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T13:00:29"
+    },
+    {
+      "source": {
+        "host": "www.bcdemocratonline.com",
+        "href": "https://www.bcdemocratonline.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:59:46"
+    },
+    {
+      "source": {
+        "host": "www.thecarbondalenews.com",
+        "href": "https://www.thecarbondalenews.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:58:30"
+    },
+    {
+      "source": {
+        "host": "www.sleepyeyenews.com",
+        "href": "https://www.sleepyeyenews.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:55:23"
+    },
+    {
+      "source": {
+        "host": "www.therecordherald.com",
+        "href": "https://www.therecordherald.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:55:16"
+    },
+    {
+      "source": {
+        "host": "www.echo-pilot.com",
+        "href": "https://www.echo-pilot.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:51:26"
+    },
+    {
+      "source": {
+        "host": "www.helena-arkansas.com",
+        "href": "https://www.helena-arkansas.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:48:25"
+    },
+    {
+      "source": {
+        "host": "www.wellingtondailynews.com",
+        "href": "https://www.wellingtondailynews.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:46:44"
+    },
+    {
+      "source": {
+        "host": "www.waxahachietx.com",
+        "href": "https://www.waxahachietx.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:45:05"
+    },
+    {
+      "source": {
+        "host": "www.journalstandard.com",
+        "href": "https://www.journalstandard.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:43:09"
+    },
+    {
+      "source": {
+        "host": "www.seacoastonline.com",
+        "href": "https://www.seacoastonline.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:42:54"
+    },
+    {
+      "source": {
+        "host": "www.fosters.com",
+        "href": "https://www.fosters.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:42:11"
+    },
+    {
+      "source": {
+        "host": "www.waltonsun.com",
+        "href": "https://www.waltonsun.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:41:52"
+    },
+    {
+      "source": {
+        "host": "www.yourvalleyvoice.com",
+        "href": "https://www.yourvalleyvoice.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:40:51"
+    },
+    {
+      "source": {
+        "host": "www.buckscountycouriertimes.com",
+        "href": "https://www.buckscountycouriertimes.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:40:26"
+    },
+    {
+      "source": {
+        "host": "www.providencejournal.com",
+        "href": "https://www.providencejournal.com/news/20190517/whataburger-explores-possible-sale-of-popular-burger-chain"
+      },
+      "timestamp": "2019-05-17T12:39:17"
+    }
+    ],
+    "earliestDate":"2019-05-17T00:00:00",
+    "text":" Orange-and-white beacon and Texas chain Whataburger has hired financial services company Morgan Stanley to explore expansion and a possible sale, the San Antonio Business Journal reports. The possibility of a sale was first reported by Reuters earlier this month. According to the news organization, the chain, which boasts more than 800 locations nationwide, could be valued at more than $6 billion. “Our company is growing and is...\n                    \n                \n            \n        ","title":"Whataburger hires Morgan Stanley to explore possible sale","source":{"host":"www.statesman.com","href":"https://www.statesman.com/news/20190517/whataburger-hires-morgan-stanley-to-explore-possible-sale"}
+    },
+    "Previously unreleased cellphone video shows Sandra Bland's perspective in arrest": 
+      {"articles":[{"source":{"host":"www.statesman.com","href":"https://www.statesman.com/news/20190507/previously-unreleased-cellphone-video-shows-sandra-blands-perspective-in-arrest"},"timestamp":"2019-05-07T00:00:00"}],"earliestDate":"2019-05-07T00:00:00","text":" A newly released video shows the traffic stop and arrest of Sandra Bland by a Texas trooper from her perspective. The video was released Monday night during an investigative segment on Dallas television station WFAA, which also featured interviews with Bland's family and supporters. The video, which was obtained in partnership with the Investigative Network, was shot by Bland on her cellphone and shows her confrontational encounter...\n                    \n                \n            \n        ","title":"Previously unreleased cellphone video shows Sandra Bland's perspective in arrest","source":{"host":"www.statesman.com","href":"https://www.statesman.com/news/20190507/previously-unreleased-cellphone-video-shows-sandra-blands-perspective-in-arrest"}
+    },
+    "East Austin Mexican restaurant reopens after temporary closure": {
+      "articles":[{"source":{"host":"www.austin360.com","href":"https://www.austin360.com/news/20190503/east-austin-mexican-restaurant-reopens-after-temporary-closure"},"timestamp":"2019-05-03T00:00:00"}],"earliestDate":"2019-05-03T00:00:00","text":"\n                            \n                        \n                    \n                \n                \n                    \n                    It's back. It's really back.\n                    \n                \n            \n        ","title":"East Austin Mexican restaurant reopens after temporary closure","source":{"host":"www.austin360.com","href":"https://www.austin360.com/news/20190503/east-austin-mexican-restaurant-reopens-after-temporary-closure"}
+    }
 }

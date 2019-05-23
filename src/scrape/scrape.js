@@ -9,7 +9,7 @@ const articles = {};
 const sources = {};
 const duplicates = {};
 
-const numRequests = 200;
+const numRequests = 10;
 let finishedRequests = 0;
 
 export function getArticles() {
@@ -101,7 +101,7 @@ function requestComplete() {
 	finishedRequests += 1;
 
 	if (finishedRequests === numRequests) {
-		console.log(JSON.stringify(sources))
+		//console.log(JSON.stringify(sources))
 
 		// if new article, add to object
 		for (i in articles) {
@@ -111,7 +111,7 @@ function requestComplete() {
 			}
 		}
 
-		console.log(JSON.stringify(prevArticles))
+		//console.log(JSON.stringify(prevArticles))
 
 		console.log(Object.keys(prevArticles).length, 'articles')
 	}

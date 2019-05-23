@@ -4,7 +4,7 @@ import moment from 'moment';
 import articles from './data/articles';
 import sources from './data/sources';
 
-//import { getArticles } from './scrape/scrape';
+import { getArticles } from './scrape/scrape';
 
 class App extends React.Component {
 	constructor(props) {
@@ -22,6 +22,7 @@ class App extends React.Component {
 
 		window.addEventListener('scroll', this.handleScroll);
 
+		// use to scape for new articles
 		//getArticles();
 	}
 	componentWillUnmount(){
@@ -73,21 +74,29 @@ class App extends React.Component {
 							article = articles[key];
 							return (
 								<li key={i}>
-									<h2>
-										{article.title}
-									</h2>
-									<h3>
-										{moment(article.earliestDate).format('LL')}
-									</h3>
-									<h3>
-										shared by {article.articles.length} media {article.articles.length > 1 ? 'outlets' : 'outlet'}
-									</h3>
-									<a href={article.source.href} target='_blank'>
-										{article.source.host}
-									</a>
-									<p>
-										{article.text}
-									</p>
+									<div className='article-content'>
+										<h2>
+											{article.title}
+										</h2>
+										<h3>
+											{moment(article.earliestDate).format('LL')}
+										</h3>
+										{article.articles.length > 1 ?
+											<h3>
+												shared by {article.articles.length} media outlets
+											</h3>
+											:
+											null
+										}
+										<p>
+											<a href={article.source.href} aria-label={`Read ${article.title}`} target='_blank'>
+												{article.source.host}
+											</a>
+										</p>
+										<p>
+											{article.text}
+										</p>
+									</div>
 								</li>
 							)
 						})}
