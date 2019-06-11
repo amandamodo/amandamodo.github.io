@@ -10,12 +10,17 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 
+		const headlines = this.getSortedHeadlines();
+
 		this.state = {
-			headlinesList: this.getSortedHeadlines(),
-			end: 30
+			allHeadlines: headlines,
+			filteredHeadlines: JSON.parse(JSON.stringify(headlines)),
+			end: 30,
 		}
+
 		this.getSortedHeadlines = this.getSortedHeadlines.bind(this);
 		this.handleScroll = this.handleScroll.bind(this);
+		this.handleSearch = this.handleSearch.bind(this);
 	}
 	componentDidMount() {
 		this.getSortedHeadlines();
@@ -23,7 +28,7 @@ class App extends React.Component {
 		window.addEventListener('scroll', this.handleScroll);
 
 		// use to scape for new articles
-		//getArticles();
+		// getArticles();
 	}
 	componentWillUnmount(){
 		window.removeEventListener('scroll');
@@ -39,19 +44,40 @@ class App extends React.Component {
 	handleScroll(e) {
 		const {
 			end,
-			headlinesList
+			allHeadlines,
 		} = this.state;
 
-		if ((window.innerHeight + window.scrollY) > document.body.scrollHeight - 300 && end < headlinesList.length) {
+		if ((window.innerHeight + window.scrollY) > document.body.scrollHeight - 300 && end < allHeadlines.length) {
 			this.setState({
 				end: end + 30
 			})
 		}
 	}
+
+	handleSearch (e){
+		const {
+			allHeadlines,
+		} = this.state;
+		const input = e.target.value.trim();
+		let filteredHeadlines = [];
+
+		if (input.length > 0) {
+			filteredHeadlines = allHeadlines.filter((headline) => {
+				return headline.toLowerCase().indexOf(input) > -1;
+			})
+		} else {
+			filteredHeadlines = JSON.parse(JSON.stringify(allHeadlines));
+		}
+
+		this.setState({
+			filteredHeadlines: filteredHeadlines,
+		})
+	}
+
 	render() {
 		const {
 			end,
-			headlinesList
+			filteredHeadlines,
 		} = this.state;
 		let article;
 
@@ -62,15 +88,18 @@ class App extends React.Component {
 						{"Amanda O'Donnell"}
 					</h1>
 					<h2>
-						{headlinesList.length} articles
+						{filteredHeadlines.length} articles
 					</h2>
 					<a href='https://twitter.com/amandamodo' target='_blank'>
 						@amandamodo
 					</a>
+					<div className='search'>
+						<input type='text' placeholder='search' onChange={this.handleSearch} />
+					</div>
 				</header>
 				<div className='content'>
 					<ul>
-						{headlinesList.slice(0, end).map((key,i) => {
+						{filteredHeadlines.slice(0, end).map((key,i) => {
 							article = articles[key];
 							return (
 								<li key={i}>

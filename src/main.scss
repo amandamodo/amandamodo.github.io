@@ -1,3 +1,8 @@
+$blue: #0000ff;
+$pink: #ffe7eb;
+$yellow: #ffff91;
+$green: #e8fff0;
+
 html, body {
 	margin: 0;
 	font-size: 16px;
@@ -28,11 +33,11 @@ li {
 	font-size: 0.75rem;
 	transition: margin 0.15s;
 	&:nth-child(2n) {
-		background: #ffff91;
+		background: $yellow;
 		margin-right: 8rem;
 	}
 	&:nth-child(2n + 1) {
-		background: #ffe7eb;
+		background: $pink;
 		margin-left: 8rem;
 	}
 	&:hover {
@@ -59,7 +64,7 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: blue;
+	color: $blue;
 	font-size: inherit;
 	&:hover {
 		text-decoration: underline;
@@ -74,6 +79,21 @@ p {
 .content {
 	max-width: 50rem;
 	margin: 0 auto;
+}
+.search {
+	input {
+		font-size: 1.5rem;
+		width: 100%;
+		max-width: 20rem;
+		margin: 1.5rem auto;
+		text-align: center;
+		border: none;
+		border-bottom: 2px solid $blue;
+		&:focus, &:active {
+			outline: none;
+			background: $green;
+		}
+	}
 }
 
 @media only screen and (max-width: 600px) {
