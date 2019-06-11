@@ -12,6 +12,13 @@ const duplicates = {};
 const numRequests = 10;
 let finishedRequests = 0;
 
+// list of article titles that were changed slightly by other publications
+const ignore = [	
+	'Whataburger explores possible sale of popular burger chain',	 			// Whataburger hires Morgan Stanley to explore possible sale
+	'Texas city named best place to live in America for third year in a row',	// Austin named best place to live in America for third year in a row by U.S. News and World Report
+	'Texas school district announces new dress code ... for parents',			// Texas school district announces new dress code for parents
+]
+
 export function getArticles() {
 	let i = 0;
 	let title;
@@ -105,7 +112,7 @@ function requestComplete() {
 
 		// if new article, add to object
 		for (i in articles) {
-			if (!prevArticles[i]) {
+			if (!prevArticles[i] && ignore.indexOf(i) === -1) {
 				prevArticles[i] = articles[i];
 				console.log(i, JSON.stringify(articles[i]))
 			}
@@ -113,7 +120,7 @@ function requestComplete() {
 
 		//console.log(JSON.stringify(prevArticles))
 
-		console.log(Object.keys(prevArticles).length, 'articles')
+		console.log(`${Object.keys(prevArticles).length} articles`)
 	}
 }
 
