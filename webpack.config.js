@@ -66,9 +66,9 @@ const webpackConfig = {
 
 webpackConfig.devServer = {
     contentBase: Path.join(__dirname, './src/'),
-    publicPath: 'http://localhost:7000/',
+    publicPath: 'http://localhost:3434/',
     hot: true,
-    port: 7676,
+    port: 3434,
     inline: true,
     progress: true,
     historyApiFallback: true,
