@@ -17,6 +17,9 @@ const ignore = [
 	'Whataburger explores possible sale of popular burger chain',	 			// Whataburger hires Morgan Stanley to explore possible sale
 	'Texas city named best place to live in America for third year in a row',	// Austin named best place to live in America for third year in a row by U.S. News and World Report
 	'Texas school district announces new dress code ... for parents',			// Texas school district announces new dress code for parents
+	"'Have you been to Austin? It's amazing': Nashville comedians' 'PSA' urges newcomers to opt for Austin",
+	"5 things to know before shooting Fourth of July fireworks",
+	"Not a tourist trap: 9 Austin Tex-Mex and Mexican restaurants to try",
 ]
 
 export function getArticles() {

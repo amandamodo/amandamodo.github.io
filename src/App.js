@@ -28,7 +28,7 @@ class App extends React.Component {
 		window.addEventListener('scroll', this.handleScroll);
 
 		// use to scape for new articles
-		// getArticles();
+		 getArticles();
 	}
 	componentWillUnmount(){
 		window.removeEventListener('scroll');
@@ -87,29 +87,29 @@ class App extends React.Component {
 					<h1>
 						{"Amanda O'Donnell"}
 					</h1>
-					<h2>
-						{filteredHeadlines.length} articles
-					</h2>
 					<a href='https://twitter.com/amandamodo' target='_blank'>
 						@amandamodo
 					</a>
 					<div className='search'>
 						<input type='text' placeholder='search' onChange={this.handleSearch} />
 					</div>
+					<h4>
+						{filteredHeadlines.length} articles
+					</h4>
 				</header>
 				<div className='content'>
 					<ul>
 						{filteredHeadlines.slice(0, end).map((key,i) => {
 							article = articles[key];
 							return (
-								<li key={i}>
+								<li key={i} className='article'>
 									<div className='article-content'>
-										<h2>
-											{article.title}
-										</h2>
 										<h3>
 											{moment(article.earliestDate).format('LL')}
 										</h3>
+										<h2>
+											{article.title}
+										</h2>
 										{article.articles.length > 1 ?
 											<h3>
 												shared by {article.articles.length} media outlets
