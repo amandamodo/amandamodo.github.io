@@ -28,7 +28,7 @@ class App extends React.Component {
 		window.addEventListener('scroll', this.handleScroll);
 
 		// use to scape for new articles
-		 getArticles();
+		//getArticles();
 	}
 	componentWillUnmount(){
 		window.removeEventListener('scroll');
@@ -126,6 +126,11 @@ class App extends React.Component {
 											{article.text}
 										</p>
 									</div>
+									{article.image &&
+										<div className='article-image'>
+											<img src={article.image} alt={`Image for ${article.title}`} rel="nofollow noopener" />
+										</div>
+									}
 								</li>
 							)
 						})}
