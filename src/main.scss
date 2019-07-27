@@ -133,6 +133,7 @@ p {
 		text-align: center;
 		border: none;
 		border-bottom: 2px solid $blue;
+		border-radius: none;
 		&:focus, &:active {
 			outline: none;
 			border-color: #000;
@@ -141,9 +142,12 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+	html, body {
+		overflow-x: hidden;
+	}
 	.article {
 		&, &:nth-child(2n), &:nth-child(2n + 1) {
-			margin: 1rem 0;
+			margin: 1rem 0.25rem;
 			flex-direction: row;
 		}
 		&-content {
