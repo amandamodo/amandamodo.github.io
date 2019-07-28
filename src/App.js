@@ -58,7 +58,7 @@ class App extends React.Component {
 		const {
 			allHeadlines,
 		} = this.state;
-		const input = e.target.value.trim();
+		const input = e.target.value.trim().toLowerCase();
 		let filteredHeadlines = [];
 
 		if (input.length > 0) {

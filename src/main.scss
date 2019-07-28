@@ -1,5 +1,9 @@
 $blue: #0000ff;
 
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	margin: 0;
 	font-size: 16px;
@@ -42,7 +46,7 @@ h3 {
 		transition: all 0.15s;
 	}
 	&:before {
-		height: 50%;
+		height: 60%;
 		width: 0.125rem;
 	}
 	&:after {
@@ -65,10 +69,6 @@ h3 {
 		&:before, &:after {
 			left: 0;
 		}
-		.article-image {
-			border-top-right-radius: 100%;
-			border-top-left-radius: 100%;
-		}
 	}
 	&:nth-child(2n + 1) {
 		margin-left: 8rem;
@@ -76,6 +76,14 @@ h3 {
 		&:before, &:after {
 			right: 0;
 		}
+	}
+	&:nth-child(3n + 1) {
+		.article-image {
+			border-top-right-radius: 100%;
+			border-top-left-radius: 100%;
+		}
+	}
+	&:nth-child(3n + 2) {
 		.article-image {
 			border-bottom-right-radius: 100%;
 			border-bottom-left-radius: 100%;
@@ -83,13 +91,13 @@ h3 {
 	}
 	&-content {
 		flex: 1 1 auto;
-		padding: 0 2rem;
+		padding: 0 1rem;
 	}
 	&-image {
 		height: 10rem;
 		flex: 0 0 10rem;
 		overflow: hidden;
-		transition: all 0.15s;
+		transition: all 0.2s;
 		img {
 			max-height: 100%;
 			position: relative;

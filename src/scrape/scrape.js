@@ -20,6 +20,9 @@ const ignore = [
 	"'Have you been to Austin? It's amazing': Nashville comedians' 'PSA' urges newcomers to opt for Austin",
 	"5 things to know before shooting Fourth of July fireworks",
 	"Not a tourist trap: 9 Austin Tex-Mex and Mexican restaurants to try",
+	"Review: Lil Yachty at SXSW is what happens when fame meets a lack of s",
+	"Texas’ most expensive rental spot is this Austin zip code, repor",
+	"What Austinites are saying about the cit",
 ]
 
 export function getArticles() {
