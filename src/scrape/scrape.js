@@ -23,6 +23,7 @@ const ignore = [
 	"Review: Lil Yachty at SXSW is what happens when fame meets a lack of s",
 	"Texas’ most expensive rental spot is this Austin zip code, repor",
 	"What Austinites are saying about the cit",
+	"Pilot flies veteran father's remains home to Texas, 52 years after he went missing"
 ]
 
 export function getArticles() {
@@ -120,7 +121,7 @@ function requestComplete() {
 		for (i in articles) {
 			if (!prevArticles[i] && ignore.indexOf(i) === -1) {
 				prevArticles[i] = articles[i];
-				console.log(i, JSON.stringify(articles[i]))
+				console.log(JSON.stringify(i), JSON.stringify(articles[i]))
 			}
 		}
 
