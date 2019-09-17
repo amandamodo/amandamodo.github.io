@@ -121,7 +121,7 @@ function requestComplete() {
 		for (i in articles) {
 			if (!prevArticles[i] && ignore.indexOf(i) === -1) {
 				prevArticles[i] = articles[i];
-				console.log(JSON.stringify(i), JSON.stringify(articles[i]))
+				console.log(`${JSON.stringify(i)}:`, JSON.stringify(articles[i]))
 			}
 		}
 
