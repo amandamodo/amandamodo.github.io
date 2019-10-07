@@ -23,7 +23,8 @@ const ignore = [
 	"Review: Lil Yachty at SXSW is what happens when fame meets a lack of s",
 	"Texas’ most expensive rental spot is this Austin zip code, repor",
 	"What Austinites are saying about the cit",
-	"Pilot flies veteran father's remains home to Texas, 52 years after he went missing"
+	"Pilot flies veteran father's remains home to Texas, 52 years after he went missing",
+	"'It's bad': Water rescues begin as Imelda soaks east Texas",				// AP
 ]
 
 export function getArticles() {
