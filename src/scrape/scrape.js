@@ -24,7 +24,9 @@ const ignore = [
 	"Texas’ most expensive rental spot is this Austin zip code, repor",
 	"What Austinites are saying about the cit",
 	"Pilot flies veteran father's remains home to Texas, 52 years after he went missing",
-	"'It's bad': Water rescues begin as Imelda soaks east Texas",				// AP
+	"'It's bad': Water rescues begin as Imelda soaks east Texas",				// AP,
+	"Toddler finds rare pink grasshopper in Texas backyard",
+	"Texas child finds rare pink grasshopper in Austin backyard"
 ]
 
 export function getArticles() {

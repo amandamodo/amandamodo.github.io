@@ -28,7 +28,7 @@ class App extends React.Component {
 		window.addEventListener('scroll', this.handleScroll);
 
 		// use to scape for new articles
-		// getArticles();
+		//getArticles();
 	}
 	componentWillUnmount(){
 		window.removeEventListener('scroll');
