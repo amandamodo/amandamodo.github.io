@@ -3,7 +3,7 @@ import moment from 'moment';
 
 import prevArticles from './../data/articles';
 
-const corsProxy = 'http://www.whateverorigin.org/get?url=';
+const corsProxy = 'https://api.allorigins.win/get?url=';
 const muckRack = 'https://muckrack.com/amanda-odonnell/articles';
 const articles = {};
 const sources = {};
@@ -26,7 +26,11 @@ const ignore = [
 	"Pilot flies veteran father's remains home to Texas, 52 years after he went missing",
 	"'It's bad': Water rescues begin as Imelda soaks east Texas",				// AP,
 	"Toddler finds rare pink grasshopper in Texas backyard",
-	"Texas child finds rare pink grasshopper in Austin backyard"
+	"Texas child finds rare pink grasshopper in Austin backyard",
+	"Barton Springs Pool's reopening plan revealed: reservations, masks and limited hours",
+	"DELAYED: Thunderbirds flyover salute of coronavirus workers pushed to 3:40 p.m.",
+	"Here are the Austin events currently under review by Austin Public Health",
+	"The features first-time homebuye",
 ]
 
 export function getArticles() {
@@ -34,14 +38,13 @@ export function getArticles() {
 	let title;
 	let source;
 	let timestamp;
-	let list;
 	let text;
 	let body;
 
 	do {
 		$.ajax({ 
 			type: "GET",
-			url: corsProxy + encodeURIComponent(muckRack + '?page=' + i) + '&callback=?',  
+			url: corsProxy + encodeURIComponent(muckRack + '?page=' + i),  
 			dataType: 'jsonp',
 			success: (data) => { 
 				$(data.contents).find('.news-story').each((i, article) => {
