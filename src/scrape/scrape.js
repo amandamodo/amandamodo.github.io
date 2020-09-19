@@ -31,6 +31,8 @@ const ignore = [
 	"DELAYED: Thunderbirds flyover salute of coronavirus workers pushed to 3:40 p.m.",
 	"Here are the Austin events currently under review by Austin Public Health",
 	"The features first-time homebuye",
+	"Hurricane Laura caused a Texas river to flow backward for hours",
+	"Former Eagles linebacker Acho launches 'Uncomfortable Conversations with a Black Man'",
 ]
 
 export function getArticles() {
