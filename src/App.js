@@ -87,9 +87,6 @@ class App extends React.Component {
 					<h1>
 						{"Amanda O'Donnell"}
 					</h1>
-					<a href='https://twitter.com/amandamodo' target='_blank'>
-						@amandamodo
-					</a>
 					<div className='search'>
 						<input type='text' placeholder='search' onChange={this.handleSearch} />
 					</div>
