@@ -28,7 +28,7 @@ class App extends React.Component {
 		window.addEventListener('scroll', this.handleScroll);
 
 		// use to scrape for new articles
-		// getArticles();
+		//getArticles();
 	}
 	componentWillUnmount(){
 		window.removeEventListener('scroll');
