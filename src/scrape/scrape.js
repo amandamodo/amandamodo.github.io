@@ -33,6 +33,8 @@ const ignore = [
 	"The features first-time homebuye",
 	"Hurricane Laura caused a Texas river to flow backward for hours",
 	"Former Eagles linebacker Acho launches 'Uncomfortable Conversations with a Black Man'",
+	"Abbott: Proposal that would land Austin police under state control has been drafted",
+	"Easy Tiger to close original downtown location",
 ]
 
 export function getArticles() {
@@ -123,8 +125,6 @@ function requestComplete() {
 	finishedRequests += 1;
 
 	if (finishedRequests === numRequests) {
-		//console.log(JSON.stringify(sources))
-
 		// if new article, add to object
 		for (i in articles) {
 			if (!prevArticles[i] && ignore.indexOf(i) === -1) {
