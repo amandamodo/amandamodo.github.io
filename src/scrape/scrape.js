@@ -54,7 +54,7 @@ export function getArticles() {
 				$(data.contents).find('.news-story').each((i, article) => {
 					article = $(article);
 					title = article.find('.news-story-title a')[0];
-					source = article.find('.news-story-body > a')[0];
+					source = article.find('.news-story-body > a:not(.timeago)')[0];
 					timestamp = article.find('.timeago').attr('title');
 
 					if (title) {
